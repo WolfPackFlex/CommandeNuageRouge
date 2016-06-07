@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Le spécialiste des aliments locaux pour bars"/>
+
+    <title>Nuage Rouge</title>
+
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.3.css"/>
+        
+    <script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="./js/jquery.mobile-1.4.3.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    
+</head>
+
+<body>
+    <div data-role="page" class="jqm-demos" id="homepage"data-title="Home Page">
+    	<div role="main">
+    		<div data-role="navbar" id="navbar-1">
+    			<ul>
+    				<li>
+    					<a href="#menupage" data-icon="bullets">Menu</a>
+    				</li>
+    				<li>
+    					<a href="http://www.nuagerouge.ca" data-icon="action">Site Web</a>
+    				</li>
+    				<li>
+    					<a href="#orderpage" data-icon="shop">Commander</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<br>
+    		<div id="logo">
+    			<img src="nuageRouge_logo.jpg" alt="NuageRougeLogo"></div>
+    		<br>
+    		<div id="slogan">
+    			Le spécialiste des aliments locaux pour bars
+    		</div>
+    		<div id="contact">
+    			<p>
+    				<img src="mail.png" alt="E-mail"
+    					style="width:14px;height:14px;border:0;"></img>
+    				<a href="mailto:info@nuagerouge.ca">
+    					info@nuagerouge.ca</a>
+    				<img src="phone.png" alt="Phone"
+    					style="width:14px;height:14px;border:0;"></img>(514) 770-5658
+    			</p>
+    		</div>
+    	</div><!-- /content -->
+
+    </div><!-- /page -->
+    
+    <div data-role="page" id="menupage">
+    
+        		<div data-role="navbar" id="navbar-1">
+    			<ul>
+    				<li>
+    					<a href="#homepage" data-icon="back">Retour</a>
+    				</li>
+    				<li>
+    					<a href="http://www.nuagerouge.ca" data-icon="action">Site Web</a>
+    				</li>
+    				<li>
+    					<a href="#orderpage" data-icon="shop">Commander</a>
+    				</li>
+    			</ul>
+    		</div>
+   		<div role="slideshow">
+   		<img src="http://nuagerouge.ca/wp-content/uploads/2013/02/11.png" alt="Truite Fumee" style="width:100%;height:10%;border:0;">
+   		</div>
+    	<div data-role="collapsible-set" id="collapsible-set-1"
+    		data-theme="a" data-content-theme="a" data-inset="true">
+    		<div data-role="collapsible">
+    			<h4>Nachos/Chips/Croustilles</h4>
+    			<ul data-role="listview" id="listview-1">
+					<li><a href="item1_1.html">Photos</a></li>
+					<li><a href="item2_1.html">Info/Saveurs</a></li>
+				</ul>   			
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Olives</h4>
+    			<ul data-role="listview" id="listview-2">
+					<li><a href="item1_2.html">Photos</a></li>
+					<li><a href="item2_2.html">Info/Saveurs</a></li>
+				</ul>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Fromages</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Saucissons</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Charcuteries</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Sirops à Cocktail</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Noix/Arachides</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4>Amuses-Gueules</h4>
+    			<p>Collapsible content.</p>
+    		</div>
+    	</div>
+    </div>
+    <div data-role="page" id="panel-fixed-page2">
+
+    <div data-role="header">
+        <h1>Landing page</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+
+        <p>This is just a landing page.</p>
+
+        <a href="#homepage" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left">Back</a>
+
+    </div><!-- /content -->
+
+
+
+</div><!-- /page -->
+</body>
+</html>
