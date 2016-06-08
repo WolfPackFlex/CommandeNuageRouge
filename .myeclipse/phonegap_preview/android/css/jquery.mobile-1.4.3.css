@@ -724,6 +724,32 @@ html.ui-nosvg .ui-btn.ui-checkbox-on:after {
 	background-image: url(images/icons-png/video-black.png);
 }
 
+#FB {
+	background-color: #3b5998;
+	color: white;
+}
+
+#IG {
+	background-color: #ded1c1;
+	color: #9b6954;
+}
+
+.steps {
+	text-align: left;
+	font-size: 12px;
+}
+
+.titlesteps {
+	color: #ff7400;
+	font-size: 16px;
+}
+
+#howto {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
 #slogan {
 	margin-right: 10px;
 	font-size: 18px;
@@ -1042,7 +1068,7 @@ html body .ui-group-theme-a .ui-btn:hover,
 html head + body .ui-btn.ui-btn-a:hover {
 	background-color: 			#ededed /*{a-bhover-background-color}*/;
 	border-color:	 		#ddd /*{a-bhover-border}*/;
-	color: 					#333 /*{a-bhover-color}*/;
+	color: 					#ff7400 /*{a-bhover-color}*/;
 	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #f3f3f3 /*{a-bhover-shadow-color}*/;
 }
 /* Button down */
