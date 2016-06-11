@@ -734,6 +734,10 @@ html.ui-nosvg .ui-btn.ui-checkbox-on:after {
 	color: #9b6954;
 }
 
+.menuitems {
+	background-color: #ddd
+}
+
 .steps {
 	text-align: left;
 	font-size: 12px;
@@ -751,17 +755,18 @@ html.ui-nosvg .ui-btn.ui-checkbox-on:after {
 }
 
 #slogan {
-	margin-right: 10px;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 }
 #logo {
 	float: left;
+	padding-top: 5px;
 }
 #contact {
 	font-size: 14px;
 	text-align: center;
+	clear: left;
 }
 ul#contact li {
     display:inline;
@@ -1079,7 +1084,7 @@ html body .ui-group-theme-a .ui-btn:active,
 html head + body .ui-btn.ui-btn-a:active {
 	background-color: 			#e8e8e8 /*{a-bdown-background-color}*/;
 	border-color:	 		#ddd /*{a-bdown-border}*/;
-	color: 					#333 /*{a-bdown-color}*/;
+	color: 					#ff7400 /*{a-bdown-color}*/;
 	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #f3f3f3 /*{a-bdown-shadow-color}*/;
 }
 /* Active button */
