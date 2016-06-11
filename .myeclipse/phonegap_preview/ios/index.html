@@ -7,6 +7,7 @@
 
     <title>Nuage Rouge</title>
 
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/jquery.mobile-1.4.3.css"/>
         
     <script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
@@ -18,7 +19,7 @@
 </head>
 
 <body>
-    <div data-role="page" class="jqm-demos" id="homepage"data-title="Home Page">
+    <div data-role="page" class="jqm-demos" id="homepage"data-title="Nuage Rouge Home">
     	<div role="main">
     		<div data-role="navbar" id="navbar-1">
     			<ul>
@@ -70,10 +71,8 @@
     		</p>
     		<div data-role="popup" id="howto" data-theme="a"
     			class="ui-content" data-overlay-theme="a">
-    			<a href="#" data-rel="back"
-    				class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">
-    				Retour
-    			</a>
+    			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow 
+    			ui-btn-inline ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Retour</a>
     			<p style="font-size:75%">Commandez en 3 étapes:</p>
     			<div class="titlesteps">
     				<p>ÉTAPE 1</p>
@@ -83,7 +82,8 @@
     					Naviguez l'application avec le menu en haut de
     					la page. Jetez un oeil sur la page Menu pour en
     					savoir plus sur nos produits. Visitez notre site
-    					web pour plus d'informations si vous désirez.
+    					web si vous désirez plus d'informations sur la 
+    					compagnie.
     				</p>
     			</div>
     			<div class="titlesteps">
@@ -91,23 +91,25 @@
     			</div>
     			<div class="steps">
     				<p>
+    					Trouvé ce que vous cherchiez? 
+    					Avancez à la page Commander.
     					Si vous désirez un produit qui n'est pas dans
     					notre menu, n'hésitez pas de téléphoner ou
     					d'envoyer un courriel. Nos coordonnées sont sur
-    					la page principale. Si vous avez trouvé ce que
-    					vous cherchez, avancez à la page Commander.
+    					la page principale.
     			</div>
     			<div class="titlesteps">
     				<p>ÉTAPE 3</p>
     			</div>
     			<div class="steps">
     				<p>
-    					Trouvez vos produits dans la liste et puis
+    					Sélectionnez vos produits dans la liste et puis
     					entrez les quantités que vous désirez. Lorsque
     					votre commande est complète, avancez à la
     					prochaine page et entrez vos informations pour
-    					la livraison: l'heure, le lieu et la
-    					facturation.
+    					la livraison: l'heure, le lieu, la facturation
+    					et un numéro pour qu'on puisse vous rejoindre.
+    					C'est tout!
     				</p>
     			</div>
     		</div>
@@ -132,14 +134,14 @@
     			</ul>
     		</div>
    		<div role="reactivephoto">
-   		<img src="http://nuagerouge.ca/wp-content/uploads/2013/02/11.png" alt="Truite Fumee" style="width:100%;height:10%;border:0;">
+   			<img src="http://nuagerouge.ca/wp-content/uploads/2013/02/11.png" alt="Truite Fumee" style="width:100%;height:10%;border:0;">
    		</div>
     	<div data-role="collapsible-set" id="collapsible-set-main"
     		data-theme="a" data-content-theme="a" data-inset="true">
     		<div data-role="collapsible">
     			<h4>Nachos/Chips</h4>
     			<div data-role="collapsible-set" id="collapsible-set-1" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="true">
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible">
     					<h4>Nature</h4>
     					<p>Collapsible content.</p>
@@ -157,7 +159,7 @@
     		<div data-role="collapsible">
     			<h4>Olives</h4>
     			<div data-role="collapsible-set" id="collapsible-set-2" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="true">
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible">
     					<h4>Cajoux</h4>
     					<p>Collapsible content.</p>
@@ -175,7 +177,7 @@
     		<div data-role="collapsible">
     			<h4>Fromages</h4>
     			<div data-role="collapsible-set" id="collapsible-set-3" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="true">
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible">
     					<h4>Pizy (100g)</h4>
     					<p>Collapsible content.</p>
@@ -192,33 +194,93 @@
     		</div>
     		<div data-role="collapsible">
     			<h4>Pots Perfectos</h4>
-    			<ul data-role="listview" id="listview-4">
-					<li><a href="item1_4.html">Saveurs</a></li>
-				</ul>
+    			<div data-role="collapsible-set" id="collapsible-set-4" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible">
+    					<h4>Rillettes de canard</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Parfait de foies de volailles au cognac</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Truite fumée à chaud au miel et épices</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    			</div>
     		</div>
     		<div data-role="collapsible">
     			<h4>Charcuteries</h4>
-    			<ul data-role="listview" id="listview-5">
-					<li><a href="item1_5.html">Saveurs</a></li>
-				</ul>
+    			<div data-role="collapsible-set" id="collapsible-set-5" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible">
+    					<h4>Chorizos-mini</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Grelots bios fumés au bois d'érable</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Saucissons saveurs variés</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    			</div>
     		</div>
     		<div data-role="collapsible">
     			<h4>Sirops à Cocktail</h4>
-    			<ul data-role="listview" id="listview-6">
-					<li><a href="item1_6.html">Saveurs</a></li>
-				</ul>
+    			<div data-role="collapsible-set" id="collapsible-set-6" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible">
+    					<h4>Sirop Tonique</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Sirop Orgeade</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Sirop Gingembre</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    			</div>
     		</div>
     		<div data-role="collapsible">
     			<h4>Essentiels</h4>
-    			<ul data-role="listview" id="listview-7">
-					<li><a href="item1_7.html">Saveurs</a></li>
-				</ul>
+    			<div data-role="collapsible-set" id="collapsible-set-7" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible">
+    					<h4>Burger végétarien</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Craquelins haut-de-gamme</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Pizzas napolitaines pré-coupées</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    			</div>
     		</div>
     		<div data-role="collapsible">
     			<h4>Amuses-Gueules</h4>
-    			<ul data-role="listview" id="listview-8">
-					<li><a href="item1_8.html">Saveurs</a></li>
-				</ul>
+    			<div data-role="collapsible-set" id="collapsible-set-8" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible">
+    					<h4>Mélange de noix/Arachides</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Chips de maïs</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    				<div data-role="collapsible">
+    					<h4>Hummus classique</h4>
+    					<p>Collapsible content.</p>
+    				</div>
+    			</div>
     		</div>
     	</div>
     </div>
