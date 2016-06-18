@@ -47,4 +47,7 @@ var app = {
 };
 
 app.initialize();
+
+var ref = window.open('http://nuagerouge.ca', '_blank', 'location=yes');
+ref.close();
     
