@@ -48,6 +48,23 @@ var app = {
 
 app.initialize();
 
-var ref = window.open('http://nuagerouge.ca', '_blank', 'location=yes');
-ref.close();
+function openSite(){
+	var ref = window.open('http://nuagerouge.ca', '_blank', 'location=yes');
+	ref.addEventListener('loadstart', function(event) {alert(event.url); });
+}
+
+function chipsImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "nachos.jpg"
+}
+
+function olivesImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "olives.jpg"
+}
+    
+function cheeseImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "grelots chorizos pizzy.jpg"
+}
     
