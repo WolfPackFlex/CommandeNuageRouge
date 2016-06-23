@@ -762,14 +762,6 @@ html.ui-nosvg .ui-btn.ui-checkbox-on:after {
 	font-weight: normal;
 	src: local('TitilliumText22L-Bold'), url('TitilliumText22L005.woff') format('woff');
 }
-
-
-@font-face {
-	font-family: 'TitilliumText22L-XBold';
-	font-style: normal;
-	font-weight: normal;
-	src: local('TitilliumText22L-XBold'), url('TitilliumText22L006.woff') format('woff');
-}
 		
 @font-face {
 	font-family:"Noticia";
