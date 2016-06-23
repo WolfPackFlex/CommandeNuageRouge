@@ -65,10 +65,10 @@
     		<div data-role="navbar" id="socialnavbar" >
     			<ul>
     				<li>
-    					<a id="FB" href="#https://www.facebook.com/nuagerouge.ca/">Facebook</a>
+    					<a id="FB" href="#" onclick="openFB();" >Facebook</a>
     				</li>
     				<li>
-    					<a id="IG" href="#https://www.instagram.com/nuagerouge.ca/">Instagram</a>
+    					<a id="IG" href="#" onclick="openIG();" >Instagram</a>
     				</li>
     			</ul>
     		</div>
@@ -182,7 +182,7 @@
 				    	<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> Maïs, huile de canola, sel</p>
     					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 3 mois</p>
     					<div data-role="fieldcontain" class="h7">Saveurs:</div>  		
-    					<div class="ui-grid-a"><br>
+    					<div class="ui-grid-a">
 							<div class="ui-block-a">&#9900; Nature</div>
 							<div class="ui-block-b">&#9900; Chipotle</div>
 							<div class="ui-block-a">&#9900; Jalapeño</div>
@@ -207,15 +207,12 @@
 						<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> Olives et/ou cajous et/ou chorizos grillé et/ou fromage de chèvres, ail, persil, cari, huile de canola</p>
     					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 1 mois dans le sac sous-vide et 15 jours après ouverture (4°C)</p>
     					<div data-role="fieldcontain" class="h7">Saveurs:</div>  		
-    					<div class="ui-grid-a"><br>
+    					<div class="ui-grid-a">
 							<div class="ui-block-a">&#9900; Cajoux</div>
 							<div class="ui-block-b">&#9900; Chorizo</div>
 							<div class="ui-block-a">&#9900; Amande rôties</div>
 							<div class="ui-block-b">&#9900; Kalamata</div>
 							<div class="ui-block-a">&#9900; Fromage de chèvre</div>
-							<div class="ui-block-b">&#9900; Légumes</div>
-							<div class="ui-block-a">&#9900; Olives</div>
-							<div class="ui-block-b">&#9900; Haricots</div>
 						</div>
     				</div>
     				<div data-role="collapsible" class="submenuitems">
@@ -264,7 +261,7 @@
     			</div>
     		</div>
     		<div data-role="collapsible">
-    			<h4>Pots Perfectos</h4>
+    			<h4 onclick="potImage();">Pots Perfectos</h4>
     			<div data-role="collapsible-set" id="collapsible-set-4" class="menuitems"
     				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible" class="submenuitems">
@@ -296,7 +293,7 @@
     			</div>
     		</div>
     		<div data-role="collapsible">
-    			<h4>Charcuteries</h4>
+    			<h4 onclick="charImage();">Charcuteries</h4>
     			<div data-role="collapsible-set" id="collapsible-set-5" class="menuitems"
     				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible" class="submenuitems">
@@ -315,7 +312,7 @@
     					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
     					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 21 jours sac ouvert et un an sous-vide (4°C)</p>
     					<div data-role="fieldcontain" class="h7">Saveurs:</div>  		
-    					<div class="ui-grid-a"><br>
+    					<div class="ui-grid-a">
 							<div class="ui-block-a">&#9900; Nature</div>
 							<div class="ui-block-b">&#9900; Chorizo</div>
 							<div class="ui-block-a">&#9900; Poivrons rôtis</div>
@@ -340,66 +337,93 @@
     					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> Porc, oignons, ail, chapelure de pain grillée, amidon de maïs, eau, sel, poivre, épices, vinaigre, poudre de cérise</p>
     					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 21 jours sac ouvert et un an sous-vide (4°C)</p>
     				</div>
-    				    <div data-role="collapsible" class="submenuitems">
+    				<div data-role="collapsible" class="submenuitems">
     					<h4>Effiloché de porc fumé (TBD)</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> (TBD) 21 jours sous-vide (4°C) et 3 mois au congélateur (-18°C)</p>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Boudin à tartiner (TBD)</h4>
     					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
     					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> (TBD) 21 jours sous-vide (4°C) et 3 mois au congélateur (-18°C)</p>
     				</div>
     			</div>
     		</div>
     		<div data-role="collapsible">
-    			<h4>Sirops à Cocktail</h4>
+    			<h4 onclick="essentielImage();">Essentiels</h4>
     			<div data-role="collapsible-set" id="collapsible-set-6" class="menuitems"
     				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible" class="submenuitems">
-    					<h4>Sirop Tonique</h4>
-    					<p>Collapsible content.</p>
-    				</div>
-    				<div data-role="collapsible" class="submenuitems">
-    					<h4>Sirop Orgeade</h4>
-    					<p>Collapsible content.</p>
-    				</div>
-    				<div data-role="collapsible" class="submenuitems">
-    					<h4>Sirop Gingembre</h4>
-    					<p>Collapsible content.</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div data-role="collapsible">
-    			<h4>Essentiels</h4>
-    			<div data-role="collapsible-set" id="collapsible-set-7" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
-    				<div data-role="collapsible" class="submenuitems">
     					<h4>Burger végétarien</h4>
-    					<p>Collapsible content.</p>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Burger Boeuf QC Précuit</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
     				</div>
     				<div data-role="collapsible" class="submenuitems">
     					<h4>Craquelins haut-de-gamme</h4>
-    					<p>Collapsible content.</p>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
     				</div>
     				<div data-role="collapsible" class="submenuitems">
     					<h4>Pizzas napolitaines pré-coupées</h4>
-    					<p>Collapsible content.</p>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Cornichons Putter's</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
     				</div>
     			</div>
     		</div>
     		<div data-role="collapsible">
-    			<h4>Amuses-Gueules</h4>
-    			<div data-role="collapsible-set" id="collapsible-set-8" class="menuitems"
+    			<h4>Accompagnements</h4>
+    			<div data-role="collapsible-set" id="collapsible-set-7" class="menuitems"
     				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
     				<div data-role="collapsible" class="submenuitems">
-    					<h4>Mélange de noix/Arachides</h4>
-    					<p>Collapsible content.</p>
+    					<h4>Mélange de noix (sans écales)</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Amandes rôties sel et poivre</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Arachides Soudanaises</h4>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
     				</div>
     				<div data-role="collapsible" class="submenuitems">
     					<h4>Salsa verde</h4>
-    					<p>Collapsible content.</p>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> Tomatillos, jalapeños, oignons, ail, coriandre, échalotte, épices</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 7 après ouverture et 3 semaines sous-vide (4°C)</p>
     				</div>
     				<div data-role="collapsible" class="submenuitems">
     					<h4>Salsa de tomates maison</h4>
-    					<p>Collapsible content.</p>
+    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> Tomates, oignons, tomatillos, ail, coriandre, piments pasilla, piments arbol, sel, jus de lime, épices</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> 7 après ouverture et 3 semaines sous-vide (4°C)</p>
     				</div>
     			</div>
+    		</div>
+    		<div data-role="collapsible">
+    			<h4 onclick="siropImage();">Sirops à Cocktail</h4>
+    			<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
+    					<div data-role="fieldcontain" class="h7">Saveurs:</div>  		
+    					<div class="ui-grid-a">
+							<div class="ui-block-a">&#9900; Tonique</div>
+							<div class="ui-block-b">&#9900; Orgeade</div>
+							<div class="ui-block-a">&#9900; Gingembre</div>
+							<div class="ui-block-b">&#9900; Tiki 1930</div>
+							<div class="ui-block-a">&#9900; BBQ Tropical</div>
+							<div class="ui-block-a">&#9900; Bitter Lim'Tonik</div>
+						</div>					
     		</div>
     	</div>
     </div>

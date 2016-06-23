@@ -48,6 +48,16 @@ var app = {
 
 app.initialize();
 
+function openIG(){
+	var ref = window.open('https://www.instagram.com/nuagerouge.ca/', '_blank', 'location=yes');
+	ref.addEventListener('loadstart', function(event) {alert(event.url); });
+}
+
+function openFB(){
+	var ref = window.open('https://www.facebook.com/nuagerouge.ca/', '_blank', 'location=yes');
+	ref.addEventListener('loadstart', function(event) {alert(event.url); });
+}
+
 function openSite(){
 	var ref = window.open('http://nuagerouge.ca', '_blank', 'location=yes');
 	ref.addEventListener('loadstart', function(event) {alert(event.url); });
@@ -65,6 +75,25 @@ function olivesImage(){
     
 function cheeseImage(){
 	var image = document.getElementById('reactiveimg');
+	image.src = "piments bomba.jpg"
+}
+
+function charImage(){
+	var image = document.getElementById('reactiveimg');
 	image.src = "grelots chorizos pizzy.jpg"
 }
-    
+ 
+function potImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "rillette 1.jpg"
+}
+
+function siropImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "sirop.jpg"
+}
+
+function essentielImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "burger.jpg"
+}

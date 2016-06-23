@@ -2684,6 +2684,7 @@ button.ui-btn-icon-notext,
 .ui-grid-d,
 .ui-grid-solo {
 	overflow: hidden;
+	margin: 1em 0 1em 0
 }
 .ui-block-a,
 .ui-block-b,
