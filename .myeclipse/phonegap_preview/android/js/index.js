@@ -70,12 +70,12 @@ function chipsImage(){
 
 function olivesImage(){
 	var image = document.getElementById('reactiveimg');
-	image.src = "olives.jpg"
+	image.src = "piments bomba.jpg"
 }
     
 function cheeseImage(){
 	var image = document.getElementById('reactiveimg');
-	image.src = "piments bomba.jpg"
+	image.src = ""
 }
 
 function charImage(){
@@ -93,7 +93,27 @@ function siropImage(){
 	image.src = "sirop.jpg"
 }
 
-function essentielImage(){
+function burgerImage(){
 	var image = document.getElementById('reactiveimg');
 	image.src = "burger.jpg"
+}
+
+function poissonImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = ""
+}
+
+function noixImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = ""
+}
+
+function autresImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = "olives.jpg"
+}
+
+function trempetteImage(){
+	var image = document.getElementById('reactiveimg');
+	image.src = ""
 }

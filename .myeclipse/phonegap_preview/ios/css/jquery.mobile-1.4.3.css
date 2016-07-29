@@ -857,10 +857,14 @@ h9 {
 	clear: left;
 	font-family: Noticia;
 }
+#searchbar {
+	
+}
 ul#contact li {
     display:inline;
     list-style-type:disc;
 }
+
 
 
 
@@ -1007,12 +1011,9 @@ label.ui-btn {
 	border-radius: 1em;
 }
 /* Alt icons */
-.ui-alt-icon.ui-btn:after,
-.ui-alt-icon .ui-btn:after,
-html .ui-alt-icon.ui-checkbox-off:after,
-html .ui-alt-icon.ui-radio-off:after,
-html .ui-alt-icon .ui-checkbox-off:after,
-html .ui-alt-icon .ui-radio-off:after {
+.ui-alt-icon.ui-btn:after, .ui-alt-icon .ui-btn:after, html .ui-alt-icon.ui-checkbox-off:after,
+	html .ui-alt-icon.ui-radio-off:after, html .ui-alt-icon .ui-checkbox-off:after,
+	html .ui-alt-icon .ui-radio-off:after {
 	background-color: 					#666 /*{global-icon-color}*/;
 	background-color: 					rgba(0,0,0,.15) /*{global-icon-disc}*/;
 }
@@ -4219,7 +4220,7 @@ div.ui-rangeslider label {
 }
 .ui-input-text,
 .ui-input-search {
-	margin: .5em 0;
+	margin: -0.1em 0.1em 0.5em 0.1em;
 	border-width: 1px;
 	border-style: solid;
 }
