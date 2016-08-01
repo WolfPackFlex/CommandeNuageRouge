@@ -832,6 +832,10 @@ h9 {
 	font-weight: bold;
 }
 
+#howtobutton {
+	margin-bottom: 0.1em;
+}
+
 #who {
 	font-family: 'Titillium-Regular';
 }
@@ -1203,7 +1207,7 @@ html .ui-bar-a .ui-slider-track .ui-btn-active,
 html .ui-body-a .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-a .ui-btn-active {
-	background-color: 		#3388cc /*{a-active-background-color}*/;
+	background-color: 		rgb(212, 71, 15) /*{a-active-background-color}*/;
 	border-color:	 		#3388cc /*{a-active-border}*/;
 	color: 					#fff /*{a-active-color}*/;
 	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
