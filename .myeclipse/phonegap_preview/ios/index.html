@@ -46,7 +46,7 @@
     					<a href="#orderpage" data-icon="shop">Commander</a>
     				</li>
     			</ul>
-    		</div>
+    		</div> 		
     		<div id="logo">
     			<img src="nuageRouge_logo.jpg" alt="NuageRougeLogo" style="border:0;">
     		</div>
@@ -73,8 +73,29 @@
     			</ul>
     		</div>
     	</div>
+    	<p style="text-align:center;">
+    				<a href="#who" id="whobutton" data-transition="pop"
+    					data-position-to="window" data-rel="popup"
+    					class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    					title="Qui sommes-nous?">
+    					Qui sommes-nous?
+    				</a>
+    			</p>
+    		<div data-role="popup" id="who" data-theme="a"
+    				class="ui-content" data-overlay-theme="a">
+    				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow 
+    				ui-btn-inline ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Retour</a>   				
+    					<div data-role="fieldcontain" style="text-align:center;"><strong>Curieux - Libre - Efficace</strong>
+    					</div>
+    					<p>
+    					<span>P</span>assionnés d’alimentation locale, nous désirons vous faire gagner du temps et économiser de l’argent avec des menus adaptés à vos besoins et une réponse rapide à vos demandes. 
+    					<br><br>
+    					<span>N</span>ous offrons une vaste gamme de produits qui vous permettront de combler les fringales ou offrir un repas léger à la clientèle de votre bar, micro-brasserie, café ou boutique spécialisée.
+					</p>
+					<img src="robinalejandra.png" alt="Robin et Alejandra" style="width:100%">
+			</div>
     	<div data-role="main">
-    		<p style="text-align:center;">
+    			<p style="text-align:center;">
     				<a href="#howto" data-transition="pop" id="howtobutton"
     					data-position-to="window" data-rel="popup"
     					class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
@@ -92,7 +113,7 @@
     				<div class="steps">
     					<p>
     					Naviguez l'application avec le menu en haut de
-    					la page. Jetez un oeil sur la page Menu pour en
+    					la page. Jetez un coup d'oeil sur la page Menu pour en
     					savoir plus sur nos produits. Visitez notre site
     					web si vous désirez plus d'informations sur la 
     					compagnie.
@@ -126,27 +147,6 @@
     					</p>
     				</div>
     			</div>
-    		<p style="text-align:center;">
-    				<a href="#who" data-transition="pop"
-    					data-position-to="window" data-rel="popup"
-    					class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
-    					title="Qui sommes-nous?">
-    					Qui sommes-nous?
-    				</a>
-    			</p>
-    		<div data-role="popup" id="who" data-theme="a"
-    				class="ui-content" data-overlay-theme="a">
-    				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow 
-    				ui-btn-inline ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Retour</a>   				
-    					<div data-role="fieldcontain" style="text-align:center;"><strong>Curieux - Libre - Efficace</strong>
-    					</div>
-    					<p>
-    					<span>P</span>assionnés d’alimentation locale, nous désirons vous faire gagner du temps et économiser de l’argent avec des menus adaptés à vos besoins et une réponse rapide à vos demandes. 
-    					<br><br>
-    					<span>N</span>ous offrons une vaste gamme de produits qui vous permettront de combler les fringales ou offrir un repas léger à la clientèle de votre bar, micro-brasserie, café ou boutique spécialisée.
-					</p>
-					<img src="robinalejandra.png" alt="Robin et Alejandra" style="width:100%">
-			</div>
 			<a class="twitter-timeline" data-height="70" data-chrome="nofooter noheader transparent" data-link-color="#E95F28" href="https://twitter.com/nuagerougemtl">Twitter Feed</a>
 			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -488,6 +488,58 @@
     		</div>
     	</div>
     </div>
+</body>
     <!-- /page end -->
+<body>
+			<div data-role="page" id="orderpage">
+				<div data-role="navbar" class="navbar-main">
+    			<ul>
+    				<li>
+    					<a href="#menupage" data-icon="bullets">Menu</a>
+    				</li>
+    				<li>
+    					<a href="#" onclick="openSite();" data-icon="action">Site Web</a>
+    				</li>
+    				<li>
+    					<a href="#homepage" data-icon="back">Retour</a>
+    				</li>
+    			</ul>
+    			</div>			
+    					<div class="titlesteps">
+    					<p style="text-align:center;font-size:150%">Êtes-vous...</p>
+    					</div>
+    					<div data-role="fieldcontain"></div>
+    					<p style="text-align:center;">
+    						<a href="#orderpage1" data-transition="pop" id="businessbutton1"
+    						data-position-to="window" data-rel="popup"
+    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    						title="Comment ça fonctionne?">
+    						Un bar</a>
+    					</p>
+    					<p style="text-align:center;">
+    						<a href="#orderpage2" data-transition="pop" id="businessbutton2"
+    						data-position-to="window" data-rel="popup"
+    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    						title="Comment ça fonctionne?">
+    						Un café</a>
+    					</p>
+    					<p style="text-align:center;">
+    						<a href="#orderpage3" data-transition="pop" id="businessbutton3"
+    						data-position-to="window" data-rel="popup"
+    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    						title="Comment ça fonctionne?">
+    						Une épicerie</a>
+    					</p>
+    					<p style="text-align:center;">
+    						<a href="#orderpage4" data-transition="pop" id="businessbutton4"
+    						data-position-to="window" data-rel="popup"
+    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    						title="Comment ça fonctionne?">
+    						Un dépanneur</a>
+    					</p>
+    					<div id="orderpagelogo">
+    						<img src="nuageRouge_logo.jpg" alt="NuageRougeLogo">
+    					</div>
+			</div>
 </body>
 </html>

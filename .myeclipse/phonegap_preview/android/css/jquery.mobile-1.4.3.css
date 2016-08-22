@@ -826,13 +826,19 @@ h9 {
 	font-family: 'Titillium-Medium';
 }
 
+.titleorder {
+	color: rgb(212, 71, 15);
+	font-size: 16px;
+	font-family: 'Titillium-Medium';
+}
+
 #howto {
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
 }
 
-#howtobutton {
+#whobutton {
 	margin-bottom: 0.1em;
 }
 
@@ -854,6 +860,10 @@ h9 {
 #logo {
 	float: left;
 	padding-top: 5px;
+}
+#orderpagelogo {
+	float:center;
+	text-align: center;
 }
 #contact {
 	font-size: 14px;
