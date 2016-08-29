@@ -59,16 +59,15 @@
     				<img src="mail.png" alt="E-mail"style="width:14px;height:14px;border:0;"></img>
     				<a href="mailto:info@nuagerouge.ca">info@nuagerouge.ca</a>
     				<img src="phone.png" alt="Phone"style="width:14px;height:14px;border:0;"></img>
-    				(514) 770-5658
-    			</p>
+    				(514) 770-5658</p>
     		</div>
     		<div data-role="navbar" id="socialnavbar" >
     			<ul>
     				<li>
-    					<a id="FB" href="#" onclick="openFB();" >Facebook</a>
+    					<a id="FB" href="#" onclick="openFB();">Facebook</a>
     				</li>
     				<li>
-    					<a id="IG" href="#" onclick="openIG();" >Instagram</a>
+    					<a id="IG" href="#" onclick="openIG();">Instagram</a>
     				</li>
     			</ul>
     		</div>
@@ -92,7 +91,9 @@
     					<br><br>
     					<span>N</span>ous offrons une vaste gamme de produits qui vous permettront de combler les fringales ou offrir un repas léger à la clientèle de votre bar, micro-brasserie, café ou boutique spécialisée.
 					</p>
+					<div class="wideimg">
 					<img src="robinalejandra.png" alt="Robin et Alejandra" style="width:100%">
+					</div>
 			</div>
     	<div data-role="main">
     			<p style="text-align:center;">
@@ -147,6 +148,29 @@
     					</p>
     				</div>
     			</div>
+    			<p style="text-align:center;">
+    				<a href="#new" id="newbutton" data-transition="pop"
+    					data-position-to="window" data-rel="popup"
+    					class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    					title="Nouveauté Spéciaux">
+    					Nouveauté / Spéciaux
+    				</a>
+    			</p>
+    		<div data-role="popup" id="new" data-theme="a"
+    				class="ui-content" data-overlay-theme="a">
+    				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow 
+    				ui-btn-inline ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Retour</a>   				
+    					<div data-role="fieldcontain" style="text-align:center;"><strong>Fruits de Mer Locaux!</strong>
+    					</div>
+    					<p style="text-align:center">
+    					Essayez nos nouveaux mactres des îles ou nos nouveaux bourgots. Peut-être un délicieux mélange des deux?
+    					<br><br>
+    					Passez à la page Menu pour plus d'informations.
+					</p>
+					<div class="wideimg">
+					<img src="bourgots.jpg" alt="Fruits de Mer" style="width:100%">
+					</div>
+			</div>
 			<a class="twitter-timeline" data-height="70" data-chrome="nofooter noheader transparent" data-link-color="#E95F28" href="https://twitter.com/nuagerougemtl">Twitter Feed</a>
 			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -168,7 +192,7 @@
     				</li>
     			</ul>
     		</div>
-   		<div role="reactiveimg"><img src="Truite_St-ED.jpg" alt="Photo Menu" style="width:100%;border:0" id="reactiveimg"></div>
+   		<div class="wideimgmenu"><img src="Truite_St-ED.jpg" alt="Photo Menu" style="width:100%;border:0" id="reactiveimg"></div>
    		
    		<form><input data-type="search" id="searchbar"></form>
    		
@@ -376,24 +400,7 @@
     			</div>
     		</div>
     		<div data-role="collapsible">
-    			<h4 onclick="burgerImage();">Burgers(TBD)</h4>
-    			<div data-role="collapsible-set" id="collapsible-set-6" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false"
-    				data-filter="true" data-input="#searchbar">
-    				<div data-role="collapsible" class="submenuitems" data-filtertext="burgers végé vege">
-    					<h4>Burger végétarien</h4>
-    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
-    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
-    				</div>
-    				<div data-role="collapsible" class="submenuitems" data-filtertext="burgers boeuf précuit">
-    					<h4>Burger Boeuf QC Précuit</h4>
-    					<div data-role="fieldcontain" class="h7">Ingrédients:</div><p class="h8"> TBD</p>
-    					<div data-role="fieldcontain" class="h7">Conservation:</div><p class="h8"> TBD</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div data-role="collapsible">
-    			<h4 onclick="poissonImage();">Poissons</h4>
+    			<h4 onclick="poissonImage();">Poissons et Fruits de Mer</h4>
     			<div data-role="collapsible-set" id="collapsible-set-6" class="menuitems"
     				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false"
     				data-filter="true" data-input="#searchbar">
@@ -506,37 +513,33 @@
     			</ul>
     			</div>			
     					<div class="titlesteps">
-    					<p style="text-align:center;font-size:150%">Êtes-vous...</p>
+    						<p style="text-align:center;font-size:150%">Êtes-vous...</p>
     					</div>
-    					<div data-role="fieldcontain"></div>
-    					<p style="text-align:center;">
-    						<a href="#orderpage1" data-transition="pop" id="businessbutton1"
-    						data-position-to="window" data-rel="popup"
-    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
-    						title="Comment ça fonctionne?">
-    						Un bar</a>
-    					</p>
-    					<p style="text-align:center;">
-    						<a href="#orderpage2" data-transition="pop" id="businessbutton2"
-    						data-position-to="window" data-rel="popup"
-    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
-    						title="Comment ça fonctionne?">
-    						Un café</a>
-    					</p>
-    					<p style="text-align:center;">
-    						<a href="#orderpage3" data-transition="pop" id="businessbutton3"
-    						data-position-to="window" data-rel="popup"
-    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
-    						title="Comment ça fonctionne?">
-    						Une épicerie</a>
-    					</p>
-    					<p style="text-align:center;">
-    						<a href="#orderpage4" data-transition="pop" id="businessbutton4"
-    						data-position-to="window" data-rel="popup"
-    						class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
-    						title="Comment ça fonctionne?">
-    						Un dépanneur</a>
-    					</p>
+    						<div id="businessbuttons">
+    							<a href="#orderpage1" data-transition="pop" id="businessbutton1"
+    							data-position-to="window" data-rel="popup"
+    							class="businessbutton1 ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    							title="Comment ça fonctionne?">
+    							Un bar</a>
+    							
+    							<a href="#orderpage2" data-transition="pop" id="businessbutton1"
+    							data-position-to="window" data-rel="popup"
+    							class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    							title="Comment ça fonctionne?">
+    							Un café</a>
+							
+    							<a href="#orderpage3" data-transition="pop" id="businessbutton1"
+    							data-position-to="window" data-rel="popup"
+    							class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    							title="Comment ça fonctionne?">
+    							Une épicerie</a>
+ 	   						
+    							<a href="#orderpage4" data-transition="pop" id="businessbutton1"
+    							data-position-to="window" data-rel="popup"
+    							class="ui-content ui-btn ui-corner-all ui-alt-icon ui-shadow ui-btn-inline"
+    							title="Comment ça fonctionne?">
+    							Un dépanneur</a>
+    						</div>
     					<div id="orderpagelogo">
     						<img src="nuageRouge_logo.jpg" alt="NuageRougeLogo">
     					</div>

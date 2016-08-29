@@ -93,11 +93,6 @@ function siropImage(){
 	image.src = "sirop.jpg"
 }
 
-function burgerImage(){
-	var image = document.getElementById('reactiveimg');
-	image.src = "burger.jpg"
-}
-
 function poissonImage(){
 	var image = document.getElementById('reactiveimg');
 	image.src = "truitecrop.jpg"

@@ -840,6 +840,19 @@ h9 {
 
 #whobutton {
 	margin-bottom: 0.1em;
+	display:block;
+	margin-left:2.5%;
+}
+
+#howtobutton {
+	margin-bottom: 0.1em;
+	display:block;
+	margin-left:2.5%;
+}
+
+#newbutton{
+	display:block;
+	margin-left:2.5%;
 }
 
 #who {
@@ -863,17 +876,70 @@ h9 {
 }
 #orderpagelogo {
 	float:center;
-	text-align: center;
+	text-align:center;
+	clear:both;
+	position:fixed;
+	top:80.5%;
+	width:100%
 }
-#contact {
+
+@media screen and (min-width:400px) {
+	#contact {
+	margin-right: 2%;
+	}
+	#slogan {
+	margin-top: 1%;
+	}
+}
+
+@media all and (orientation: landscape) {
+	#orderpagelogo {
+	top:66.5%;
+	}
+	#businessbuttons {
+	text-align:center;
+	}
+	#contact {
+	font-size: 14px;
+	text-align: center;
+	}
+	#logo {
+	float: left;
+	padding-top: 5px;
+	margin-top:1.5%;
+	}
+	.wideimg {
+	margin-left:20%;
+	width:60%;
+	height:50%;
+	}
+	.wideimgmenu {
+	margin-left:10%;
+	width:80%;
+	height:80%;
+	}
+}
+
+@media all and (orientation: portrait) {
+	#businessbuttons {
+	text-align:center;
+	}
+	#businessbutton1{
+	display:block;
+	text-align:center;
+	margin-bottom: 2%;
+	margin-left: 2.5%;
+	}
+	#contact {
 	font-size: 14px;
 	text-align: center;
 	clear: left;
-	font-family: Noticia;
+	}
 }
-#searchbar {
-	
-}
+
+
+
+
 ul#contact li {
     display:inline;
     list-style-type:disc;
