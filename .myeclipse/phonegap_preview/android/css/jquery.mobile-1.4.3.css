@@ -883,6 +883,17 @@ h9 {
 	width:100%
 }
 
+label {
+    width: 150px;
+    text-align: left;
+    margin-left: 0.5em;
+    display:inline-block;
+}
+
+.orderinput{
+
+}
+
 @media screen and (min-width:400px) {
 	#contact {
 	margin-right: 2%;
@@ -941,8 +952,6 @@ ul#contact li {
     display:inline;
     list-style-type:disc;
 }
-
-
 
 
 /* Globals */
@@ -1908,8 +1917,8 @@ button.ui-btn-icon-notext,
 /* Form labels */
 .ui-mobile label,
 .ui-controlgroup-label {
-	display: block;
-	margin: 0 0 .4em;
+	display: inline-block;
+	margin: .4em 0 .4em;
 }
 /* Accessible content hiding */
 /* ui-hide-label deprecated in 1.4. TODO: Remove in 1.5 */
