@@ -544,7 +544,7 @@
 <!---- /Page End----->
 <body>
 	<div data-role="page" id="barpage" data-title="Order Page">
-				<div data-role="navbar" class="navbar-main" style="margin-bottom:5px">
+			<div data-role="navbar" class="navbar-main" style="margin-bottom:5px">
     			<ul>
     				<li>
     					<a href="#menupage" data-icon="bullets">Menu</a>
@@ -558,12 +558,12 @@
     			</ul>
     			</div>
     				<form><input data-type="search" id="searchbar2" autocomplete="on"></form>
-    			<div data-role="collapsible">
+    		<div data-role="collapsible" data-input="#searchbar2" data-filter="true">
     			<h4>Nachos</h4>
     			<div data-role="collapsible-set" id="collapsible-set-bar1" class="menuitems"
-    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false"
-    				data-filter="true" data-input="#searchbar2"></div>
-    					<form style="width:7em">
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false"></div>
+    					<form style="margin-left:10%;width:80%">
+    						<label for="nachos-0">En Vrac</label><input type="number" data-clear-btn="true" name="nachos-0" pattern="[0-9]*" id="nachos-0" min="0" value="">
 							<label for="nachos-1">Nature</label><input type="number" data-clear-btn="true" name="nachos-1" pattern="[0-9]*" id="nachos-1" min="0" value="">
 							<label for="nachos-2">Chipotle</label><input type="number" data-clear-btn="true" name="nachos-2" pattern="[0-9]*" id="nachos-2" min="0" value="">
 							<label for="nachos-3">Jalapeño</label><input type="number" data-clear-btn="true" name="nachos-3" pattern="[0-9]*" id="nachos-3" min="0" value="">
@@ -574,7 +574,80 @@
 							<label for="nachos-8">Haricots</label><input type="number" data-clear-btn="true" name="nachos-8" pattern="[0-9]*" id="nachos-8" min="0" value="">
 						</form>	
     			</div>
-	</div>
+    		<div data-role="collapsible" data-input="#searchbar2" data-filter="true">
+    			<h4 onclick="olivesImage();">Olives/Marinades</h4>
+    			<div data-role="collapsible-set" id="collapsible-set-2" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Farcies en sac</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="olives-1">Prune au zeste</label><input type="number" data-clear-btn="true" name="olives-1" pattern="[0-9]*" id="olives-1" min="0" value="">
+							<label for="olives-2">Chorizo</label><input type="number" data-clear-btn="true" name="olives-2" pattern="[0-9]*" id="olives-2" min="0" value="">
+							<label for="olives-3">Jalapeño</label><input type="number" data-clear-btn="true" name="olives-3" pattern="[0-9]*" id="olives-3" min="0" value="">
+							<label for="olives-4">Amandes rôties</label><input type="number" data-clear-btn="true" name="olives-4" pattern="[0-9]*" id="olives-4" min="0" value="">
+							<label for="olives-5">Kalamata</label><input type="number" data-clear-btn="true" name="olives-5" pattern="[0-9]*" id="olives-5" min="0" value="">
+							<label for="olives-6">Cajoux</label><input type="number" data-clear-btn="true" name="olives-6" pattern="[0-9]*" id="olives-6" min="0" value="">
+							<label for="olives-7">Citron orange</label><input type="number" data-clear-btn="true" name="olives-7" pattern="[0-9]*" id="olives-7" min="0" value="">
+							<label for="olives-8">Feta</label><input type="number" data-clear-btn="true" name="olives-8" pattern="[0-9]*" id="olives-8" min="0" value="">
+							<label for="olives-9">Fromage de chèvre</label><input type="number" data-clear-btn="true" name="olives-9" pattern="[0-9]*" id="olives-9" min="0" value="">
+							<label for="olives-10">Piments bomba</label><input type="number" data-clear-btn="true" name="olives-10" pattern="[0-9]*" id="olives-10" min="0" value="">
+						</form>	
+    				</div>
+    				<div data-role="collapsible" class="submenuitems" data-input="#searchbar2">
+    					<h4>Farcies/Marinées en pot</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="olivespot-1">Farcies en 3 façons</label><input type="number" data-clear-btn="true" name="olivespot-1" pattern="[0-9]*" id="olivespot-1" min="0" value="">
+							<label for="olivespot-2">Prunes au zeste</label><input type="number" data-clear-btn="true" name="olivespot-2" pattern="[0-9]*" id="olivespot-2" min="0" value="">
+							<label for="olivespot-3">Piments bomba</label><input type="number" data-clear-btn="true" name="olivespot-3" pattern="[0-9]*" id="olivespot-3" min="0" value="">
+						</form>
+    				</div>
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Cornichons Putter's</h4>
+    					<form style="margin-left:10%;width:80%">
+							<label for="cornichons-1">En sac sous-vide</label><input type="number" data-clear-btn="true" name="cornichons-1" pattern="[0-9]*" id="cornichons-1" min="0" value="">
+							<label for="cornichons-2">En chaudière (20L)</label><input type="number" data-clear-btn="true" name="cornichons-2" pattern="[0-9]*" id="cornichons-2" min="0" value="">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div data-role="collapsible" data-filter="true" data-input="#searchbar2">
+    			<h4 onclick="cheeseImage();">Fromages</h4>
+    			<div data-role="collapsible-set" id="collapsible-set-3" class="menuitems"
+    				data-theme="a" data-content-theme="a" data-mini="true" data-inset="false">
+    				<div data-role="collapsible" class="submenuitems">
+    					<h4>Fromage Pizy</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="pizy-1">À l'unité</label><input type="number" data-clear-btn="true" name="pizy-1" pattern="[0-9]*" id="pizy-1" min="0" value="">
+						</form>
+    				</div>
+    					<div data-role="collapsible" class="submenuitems">
+    					<h4>Fromage de chèvre au poivre noir</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="fromchevre-1">En Pots Perfectos</label><input type="number" data-clear-btn="true" name="fromchevre-1" pattern="[0-9]*" id="fromchevre-1" min="0" value="">
+							<label for="fromchevre-2">En grand pot (1kg)</label><input type="number" data-clear-btn="true" name="fromchevre-2" pattern="[0-9]*" id="fromchevre-2" min="0" value="">
+						</form>
+    				</div>
+    				    <div data-role="collapsible" class="submenuitems">
+    					<h4>Fromage Freddo</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="freddo-1">À l'unité</label><input type="number" data-clear-btn="true" name="freddo-1" pattern="[0-9]*" id="freddo-1" min="0" value="">
+						</form>
+    				</div>
+    				    <div data-role="collapsible" class="submenuitems">
+    					<h4>Fromage Villeray</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="villeray-1">À l'unité</label><input type="number" data-clear-btn="true" name="villeray-1" pattern="[0-9]*" id="villeray-1" min="0" value="">
+						</form>
+    				</div>
+    				    <div data-role="collapsible" class="submenuitems">
+    					<h4>Fromage de vache frais à la ciboulette</h4>
+						<form style="margin-left:10%;width:80%">
+							<label for="fromvache-1">En Pots Perfectos</label><input type="number" data-clear-btn="true" name="fromvache-1" pattern="[0-9]*" id="fromvache-1" min="0" value="">
+						</form>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
 </body>
 
 </html>

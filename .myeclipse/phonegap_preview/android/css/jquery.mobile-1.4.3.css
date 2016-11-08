@@ -890,10 +890,6 @@ label {
     display:inline-block;
 }
 
-.orderinput{
-
-}
-
 @media screen and (min-width:400px) {
 	#contact {
 	margin-right: 2%;
@@ -901,6 +897,13 @@ label {
 	#slogan {
 	margin-top: 1%;
 	}
+	.ui-mobile label,
+	.ui-controlgroup-label {
+	display: inline-block;
+	margin: .4em 0 .4em;
+	text-align: center;
+	padding-left: 30%;
+}
 }
 
 @media all and (orientation: landscape) {
@@ -929,6 +932,16 @@ label {
 	width:80%;
 	height:80%;
 	}
+	.ui-mobile label,
+	.ui-controlgroup-label {
+	display: inline-block;
+	margin: .4em 0 .4em;
+	text-align: center;
+	padding-left: 30%;
+	}
+	#businessbutton1{
+	text-align:center;
+	}
 }
 
 @media all and (orientation: portrait) {
@@ -946,6 +959,13 @@ label {
 	text-align: center;
 	clear: left;
 	}
+	.ui-mobile label,
+	.ui-controlgroup-label {
+	display: inline-block;
+	margin: .4em 0 .4em;
+	text-align: center;
+	padding-left: 10%;
+}
 }
 
 ul#contact li {
@@ -1914,12 +1934,8 @@ button.ui-btn-icon-notext,
 	box-sizing: content-box;
 	width: 1.75em;
 }
-/* Form labels */
-.ui-mobile label,
-.ui-controlgroup-label {
-	display: inline-block;
-	margin: .4em 0 .4em;
-}
+
+
 /* Accessible content hiding */
 /* ui-hide-label deprecated in 1.4. TODO: Remove in 1.5 */
 .ui-hide-label > label,
